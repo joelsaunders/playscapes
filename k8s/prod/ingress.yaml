@@ -7,23 +7,23 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt-staging
     kubernetes.io/ingress.class: traefik
     ingress.kubernetes.io/ssl-redirect: "true"
-    ingress.kubernetes.io/ssl-host: "www.playscapes.com"
+    ingress.kubernetes.io/ssl-host: "www.playscapespresents.com"
     ingress.kubernetes.io/ssl-force-host: "true"
 spec:
   tls:
     - secretName: www-playscapes-com-tls
       hosts:
-        - www.playscapes.com
-        - playscapes.com
+        - www.playscapespresents.com
+        - playscapespresents.com
   rules:
-    - host: www.playscapes.com
+    - host: www.playscapespresents.com
       http:
         paths:
           - path: /
             backend:
               serviceName: playscapes-nginx
               servicePort: 80
-    - host: playscapes.com
+    - host: playscapespresents.com
       http:
         paths:
           - path: /
