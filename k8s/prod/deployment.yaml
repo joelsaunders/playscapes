@@ -13,7 +13,8 @@ spec:
       labels:
         name: playscapes-main
     spec:
+      containers:
         - name: nginx
-          image: joelsaunders91/gothebookofjoel-nginx:46fcb4edce64cc2854d5321e0727b233bd978fcc
+          image: nginx
           ports:
             - containerPort: 80
