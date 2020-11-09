@@ -1,0 +1,32 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress
+  namespace: playscapes
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-staging
+    kubernetes.io/ingress.class: traefik
+    ingress.kubernetes.io/ssl-redirect: "true"
+    ingress.kubernetes.io/ssl-host: "www.playscapes.com"
+    ingress.kubernetes.io/ssl-force-host: "true"
+spec:
+  tls:
+    - secretName: www-playscapes-com-tls
+      hosts:
+        - www.playscapes.com
+        - playscapes.com
+  rules:
+    - host: www.playscapes.com
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: playscapes-nginx
+              servicePort: 80
+    - host: playscapes.com
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: playscapes-nginx
+              servicePort: 80

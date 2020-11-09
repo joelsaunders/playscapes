@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: playscapes
+  namespace: playscapes
+spec:
+  selector:
+    matchLabels:
+      name: playscapes-main
+  revisionHistoryLimit: 1
+  template:
+    metadata:
+      labels:
+        name: playscapes-main
+    spec:
+        - name: nginx
+          image: joelsaunders91/gothebookofjoel-nginx:46fcb4edce64cc2854d5321e0727b233bd978fcc
+          ports:
+            - containerPort: 80
