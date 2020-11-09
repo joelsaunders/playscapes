@@ -9,6 +9,10 @@ module.exports = {
                 'smoke-light': 'rgba(0, 0, 0, 0.4)',
                 'smoke-lighter': 'rgba(0, 0, 0, 0.25)',
                 'smoke-lightest': 'rgba(0, 0, 0, 0.1)',
+                'playscapes-purple': 'rgba(52, 52, 116, 1)',
+                'playscapes-purple-light': 'rgba(180, 179, 224, 1)',
+                'playscapes-purple-lighter': 'rgba(180, 179, 224, 0.5)',
+                'playscapes-pink-dark': 'rgba(211, 43, 83, 1)'
             }
         }
     },
