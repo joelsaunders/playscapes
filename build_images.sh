@@ -7,7 +7,7 @@ export BASE_TAG="joelsaunders91"
 export NGINX_TAG=$BASE_TAG/playscapes-nginx:$COMMIT
 
 echo "building frontend"
-#npm run --prefix ./ui build
+npm run --prefix ./ui build
 rm -rf nginx/www
 mkdir -p nginx/www/
 cp -a ui/build/* nginx/www/
