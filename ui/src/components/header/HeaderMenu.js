@@ -5,8 +5,9 @@ import _ from 'lodash';
 const HeaderItems = {
     'Why play?': '/why-play',
     'Why rethink?': '/why-rethink',
-    'Who are we?': '/who-are-we',
+    'Who we are': '/who-we-are',
     'What could we do together?': '/what-could-we-do-together',
+    'Resources': '/resources',
     'Get in contact': '/get-in-contact',
 };
 
