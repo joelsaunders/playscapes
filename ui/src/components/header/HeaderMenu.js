@@ -3,10 +3,9 @@ import {Link} from "react-router-dom";
 import _ from 'lodash';
 
 const HeaderItems = {
-    'Why play?': '/why-play',
-    'Why rethink?': '/why-rethink',
     'Who we are': '/who-we-are',
     'What could we do together?': '/what-could-we-do-together',
+    'What\'s coming up?': 'whats-coming-up',
     'Resources': '/resources',
     'Get in contact': '/get-in-contact',
 };

@@ -3,7 +3,7 @@ import React from 'react';
 
 const TeamMemberItem = (name, imgUrl, text) => {
     return <div
-        className="flex flex-col rounded shadow-lg bg-white-overlay-01dp max-w-lg">
+        className="flex flex-col rounded shadow-lg bg-white-overlay-01dp max-w-md">
         <div className="flex flex-col flex-grow">
             <div className="flex flex-col w-full h-auto">
                 <div className="relative">
@@ -19,7 +19,7 @@ const TeamMemberItem = (name, imgUrl, text) => {
         </div>
         <div className="">
             <a href={`/who-we-are/${name}`}>
-                <svg className="float-right m-5 mt-0 bg-playscapes-pink-dark rounded-full w-12 p-2"
+                <svg className="float-right m-5 mt-0 bg-playscapes-pink-dark hover:bg-playscapes-purple-dark hover:text-white rounded-full w-12 p-2"
                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                      stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -49,8 +49,7 @@ const teamMembers = [
 const WhoWeAre = () => {
     return <div className="flex flex-col items-center justify-center mt-10">
         {/*<img src="https://res.cloudinary.com/dceeo2a79/image/upload/f_auto,q_auto:best/v1604947056/playscapes/Selection_555.png" alt="playscapes logo" />*/}
-        <div className="text-white text-2xl">Who we are</div>
-        <div className="flex md:flex-row mt-10 flex-col md:space-x-10">
+        <div className="flex md:flex-row mt-10 flex-col md:space-x-16">
             {teamMembers}
         </div>
     </div>

@@ -7,6 +7,9 @@ import HeaderContainer from "./header/HeaderContainer";
 import HompageContainer from "./homepage/homepage";
 import WhoWeAre from "./who-we-are/whoWeAre";
 import WhoWeAreDetailContainer from "./who-we-are-detail/whoWeAreDetailContainer";
+import WhatsComingUpComponent from "./whats-coming-up/whatsComingUpComponent";
+import WhatWeCouldDoTogetherComponent
+    from "./what-we-could-do-together/whatWeCouldDoTogetherComponent";
 
 function App() {
     return <div className="bg-playscapes-purple min-h-screen">
@@ -22,6 +25,8 @@ function App() {
                     <Route path="/" exact component={HompageContainer}/>
                     <Route path="/who-we-are" exact component={WhoWeAre}/>
                     <Route path="/who-we-are/:teamMember" exact component={WhoWeAreDetailContainer}/>
+                    <Route path="/whats-coming-up" exact component={WhatsComingUpComponent}/>
+                    <Route path="/what-could-we-do-together" exact component={WhatWeCouldDoTogetherComponent}/>
                 </div>
             </Router>
         </div>

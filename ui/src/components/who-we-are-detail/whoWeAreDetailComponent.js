@@ -2,8 +2,8 @@ import React from 'react';
 
 
 const BioCard = (bioItem) => {
-    return <div className="rounded shadow-lg bg-white-overlay-01dp w-full">
-        <div className="m-5 text-playscapes-pink-dark">
+    return <div className="rounded shadow-lg bg-white-overlay-01dp w-full flex-grow">
+        <div className="m-5 text-playscapes-pink-dark text-lg">
             {bioItem.title}
         </div>
         <div className="m-5 text-playscapes-purple-light" dangerouslySetInnerHTML={{__html: bioItem.text}} />
