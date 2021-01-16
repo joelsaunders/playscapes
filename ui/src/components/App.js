@@ -1,11 +1,12 @@
 import React from 'react';
-import {Router, Route} from "react-router-dom";
+import {Router, Route, Switch} from "react-router-dom";
 import {Helmet} from "react-helmet";
 
 import customHistory from "../customHistory";
 import HeaderContainer from "./header/HeaderContainer";
 import HompageContainer from "./homepage/homepage";
 import WhoWeAre from "./who-we-are/whoWeAre";
+import WhoWeAreDetailContainer from "./who-we-are-detail/whoWeAreDetailContainer";
 
 function App() {
     return <div className="bg-playscapes-purple min-h-screen">
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/" component={HeaderContainer}/>
                     <Route path="/" exact component={HompageContainer}/>
                     <Route path="/who-we-are" exact component={WhoWeAre}/>
+                    <Route path="/who-we-are/:teamMember" exact component={WhoWeAreDetailContainer}/>
                 </div>
             </Router>
         </div>
