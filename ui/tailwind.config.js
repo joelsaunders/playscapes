@@ -24,7 +24,8 @@ module.exports = {
                 'white-overlay-08dp': 'rgba(255,255,255, 0.12)',
                 'white-overlay-12dp': 'rgba(255,255,255, 0.14)',
                 'white-overlay-16dp': 'rgba(255,255,255, 0.15)',
-                'white-overlay-24dp': 'rgba(255,255,255, 0.16)'
+                'white-overlay-24dp': 'rgba(255,255,255, 0.16)',
+                "playscapes-purple-dark": '#000949'
             }
         }
     },

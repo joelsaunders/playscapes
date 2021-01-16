@@ -3,22 +3,22 @@ import React from 'react';
 
 const TeamMemberItem = (name, imgUrl, text) => {
     return <div
-        className="flex flex-col ml-5 mr-5 my-6 rounded shadow-lg bg-white-overlay-01dp max-w-xl">
-        <div className="flex flex-row flex-grow">
-            <div className="flex flex-col w-1/4 mr-2 ml-5 mt-5">
-                <div className="w-full">
+        className="flex flex-col rounded shadow-lg bg-white-overlay-01dp max-w-lg">
+        <div className="flex flex-col flex-grow">
+            <div className="flex flex-col w-full h-auto">
+                <div className="relative">
                     <img className="object-cover rounded" src={imgUrl}/>
-                </div>
-                <div className="mt-5 text-playscapes-pink-dark text-2xl">
-                    {name}
+                    <div className="absolute bottom-0 text-playscapes-pink-dark text-4xl m-5">
+                        {name}
+                    </div>
                 </div>
             </div>
-            <div className="w-3/4 text-playscapes-purple-light m-5 mb-0">
+            <div className="text-playscapes-purple-light m-5 mb-0">
                 {text}
             </div>
         </div>
-        <div>
-            <a href={`/who-we-are/${name}`} >
+        <div className="">
+            <a href={`/who-we-are/${name}`}>
                 <svg className="float-right m-5 mt-0 bg-playscapes-pink-dark rounded-full w-12 p-2"
                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                      stroke="currentColor">
@@ -49,8 +49,8 @@ const teamMembers = [
 const WhoWeAre = () => {
     return <div className="flex flex-col items-center justify-center mt-10">
         {/*<img src="https://res.cloudinary.com/dceeo2a79/image/upload/f_auto,q_auto:best/v1604947056/playscapes/Selection_555.png" alt="playscapes logo" />*/}
-        <div className="mt-5 text-white text-2xl">Who we are</div>
-        <div className="flex md:flex-row mt-20 flex-col">
+        <div className="text-white text-2xl">Who we are</div>
+        <div className="flex md:flex-row mt-10 flex-col md:space-x-10">
             {teamMembers}
         </div>
     </div>
