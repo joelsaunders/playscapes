@@ -1,4 +1,6 @@
 import React from 'react';
+import HomeButton from "../homeButton";
+import {Link} from "react-router-dom";
 
 
 const TeamMemberItem = (name, imgUrl, text) => {
@@ -18,14 +20,14 @@ const TeamMemberItem = (name, imgUrl, text) => {
             </div>
         </div>
         <div className="">
-            <a href={`/who-we-are/${name}`}>
+            <Link to={`/who-we-are/${name}`}>
                 <svg className="float-right m-5 mt-0 bg-playscapes-pink-dark hover:bg-playscapes-purple-dark hover:text-white rounded-full w-12 p-2"
                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                      stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                 </svg>
-            </a>
+            </Link>
         </div>
     </div>
 
@@ -47,8 +49,8 @@ const teamMembers = [
 
 
 const WhoWeAre = () => {
-    return <div className="flex flex-col items-center justify-center mt-10">
-        {/*<img src="https://res.cloudinary.com/dceeo2a79/image/upload/f_auto,q_auto:best/v1604947056/playscapes/Selection_555.png" alt="playscapes logo" />*/}
+    return <div className="flex flex-col items-center justify-center">
+        <HomeButton />
         <div className="flex md:flex-row mt-10 flex-col md:space-x-16">
             {teamMembers}
         </div>

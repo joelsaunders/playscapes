@@ -1,4 +1,5 @@
 import React from 'react';
+import HomeButton from "../homeButton";
 
 const Item = (title, text) => {
     return <div className="w-1/3">
@@ -22,14 +23,8 @@ const Items = [
 
 
 const WhatWeCouldDoTogetherComponent = () => {
-    return <div className="flex flex-col mt-5">
-        <div className="flex justify-center">
-            <a className="w-20" href="/">
-                <img
-                    src="https://res.cloudinary.com/dceeo2a79/image/upload/f_auto,q_auto/v1609328923/playscapes/Untitled_design_73.png"
-                    alt="playscapes logo"/>
-            </a>
-        </div>
+    return <div className="flex flex-col">
+        <HomeButton />
         <div className="flex flex-row space-x-5 mt-10">
             {Items[0]}
             {Items[1]}

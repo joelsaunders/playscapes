@@ -1,0 +1,54 @@
+import React from 'react';
+import HomeButton from "../homeButton";
+
+const exampleCallback = function() {
+            console.log('Order complete!');
+        };
+
+
+const PlayscapesPresents = () => {
+    return <div className="flex flex-col justify-center">
+        <HomeButton/>
+        <div className="flex justify-center text-2xl text-playscapes-pink-dark mt-5">
+            PlayScapes Presents...
+        </div>
+        <div className="flex justify-center mt-10 text-playscapes-purple-light w-full space-x-10">
+            <div className="w-1/2 text-center">
+                <p>
+                    PlayScapes Presents… is PlayScapes’ monthly applied theatre online drop-in event
+                    paying attention to topics of diversity, power, position, privilege, prejudice,
+                    oppression, collaboration/conflict, and inclusion/exclusion in participants
+                    experience of organisational and community life.
+                </p>
+                <p className="mt-2">
+                    Typically we are joined by people working in a range of different
+                    organisational
+                    contexts who are interested in these topics, as well as by actors /
+                    improvisers. The
+                    events are very lively and interactive and require some willingness to share
+                    your
+                    experience with the group, but you will not be under any obligation to do or
+                    say
+                    anything you do not want to and no prior improvisation experience is
+                    expected.
+                </p>
+            </div>
+            <div className="w-1/2" id="eventbrite-widget-container-129296171329"></div>
+        </div>
+        {
+            window.EBWidgets.createWidget({
+            // Required
+            widgetType: 'checkout',
+            eventId: '129296171329',
+            iframeContainerId: 'eventbrite-widget-container-129296171329',
+
+            // Optional
+            iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+            onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+        })
+        }
+
+    </div>
+}
+
+export default PlayscapesPresents

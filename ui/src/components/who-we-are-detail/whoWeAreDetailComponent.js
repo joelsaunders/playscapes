@@ -1,4 +1,5 @@
 import React from 'react';
+import HomeButton from "../homeButton";
 
 
 const BioCard = (bioItem) => {
@@ -32,9 +33,10 @@ const BioCardCols = (teamMember) => {
 
 const WhoWeAreDetailComponent = ({teamMember}) => {
 
-    return <div className="flex flex-col mt-10">
+    return <div className="flex flex-col">
+        <HomeButton />
         <div
-            className="flex flex-col w-full rounded shadow-lg bg-white-overlay-01dp overflow-hidden">
+            className="flex flex-col w-full rounded shadow-lg bg-white-overlay-01dp overflow-hidden mt-5">
             <div className="flex row w-full m-5">
                 <div className="w-1/4 ml-5 mt-5 mr-5 pr-10">
                     <img className="w-full rounded-full object-cover" src={teamMember.image}/>
