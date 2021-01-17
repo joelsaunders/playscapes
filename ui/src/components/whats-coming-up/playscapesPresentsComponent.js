@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import HomeButton from "../homeButton";
 
 const exampleCallback = function() {
@@ -7,6 +7,19 @@ const exampleCallback = function() {
 
 
 const PlayscapesPresents = () => {
+    useEffect(() => {
+        window.EBWidgets.createWidget({
+            // Required
+            widgetType: 'checkout',
+            eventId: '129296171329',
+            iframeContainerId: 'eventbrite-widget-container-129296171329',
+
+            // Optional
+            iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+            onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+        })
+    })
+
     return <div className="flex flex-col justify-center">
         <HomeButton/>
         <div className="flex justify-center text-2xl text-playscapes-pink-dark mt-5">
@@ -35,19 +48,6 @@ const PlayscapesPresents = () => {
             </div>
             <div className="w-1/2" id="eventbrite-widget-container-129296171329"></div>
         </div>
-        {
-            window.EBWidgets.createWidget({
-            // Required
-            widgetType: 'checkout',
-            eventId: '129296171329',
-            iframeContainerId: 'eventbrite-widget-container-129296171329',
-
-            // Optional
-            iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-            onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-        })
-        }
-
     </div>
 }
 
