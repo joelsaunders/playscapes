@@ -5,11 +5,11 @@ import {Link} from "react-router-dom";
 
 const TeamMemberItem = (name, imgUrl, text) => {
     return <div
-        className="flex flex-col rounded shadow-lg bg-white-overlay-01dp max-w-md">
+        className="flex flex-col rounded shadow-lg bg-white-overlay-01dp max-w-md" key={name}>
         <div className="flex flex-col flex-grow">
             <div className="flex flex-col w-full h-auto">
                 <div className="relative">
-                    <img className="object-cover rounded" src={imgUrl}/>
+                    <img alt={`team member - ${name}`} className="object-cover rounded" src={imgUrl}/>
                     <div className="absolute bottom-0 text-playscapes-pink-dark text-4xl m-5">
                         {name}
                     </div>
@@ -24,7 +24,7 @@ const TeamMemberItem = (name, imgUrl, text) => {
                 <svg className="float-right m-5 mt-0 bg-playscapes-pink-dark hover:bg-playscapes-purple-dark hover:text-white rounded-full w-12 p-2"
                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                      stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                           d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                 </svg>
             </Link>

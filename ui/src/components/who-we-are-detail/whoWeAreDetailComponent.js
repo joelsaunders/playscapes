@@ -3,7 +3,7 @@ import HomeButton from "../homeButton";
 
 
 const BioCard = (bioItem) => {
-    return <div className="rounded shadow-lg bg-white-overlay-01dp w-full flex-grow">
+    return <div key={bioItem.title} className="rounded shadow-lg bg-white-overlay-01dp w-full flex-grow">
         <div className="m-5 text-playscapes-pink-dark text-lg">
             {bioItem.title}
         </div>
@@ -18,6 +18,7 @@ const BioCardCols = (teamMember) => {
                 if (idx % 2 === 0) {
                     return BioCard(bioItem)
                 }
+                return null
             })}
         </div>
         <div className="flex flex-col w-1/2 space-y-5">
@@ -25,6 +26,7 @@ const BioCardCols = (teamMember) => {
                 if (idx % 2 !== 0) {
                     return BioCard(bioItem)
                 }
+                return null
             })}
         </div>
     </div>
@@ -39,7 +41,7 @@ const WhoWeAreDetailComponent = ({teamMember}) => {
             className="flex flex-col w-full rounded shadow-lg bg-white-overlay-01dp overflow-hidden mt-5">
             <div className="flex row w-full m-5">
                 <div className="w-1/4 ml-5 mt-5 mr-5 pr-10">
-                    <img className="w-full rounded-full object-cover" src={teamMember.image}/>
+                    <img alt={`team member - ${teamMember.name}`} className="w-full rounded-full object-cover" src={teamMember.image}/>
                 </div>
                 <div className="flex flex-grow">
                     <div className="self-end text-playscapes-pink-dark text-5xl">

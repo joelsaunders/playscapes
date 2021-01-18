@@ -18,15 +18,15 @@ const PlayscapesPresents = () => {
             iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
             onOrderComplete: exampleCallback  // Method called when an order has successfully completed
         })
-    })
+    }, [])
 
     return <div className="flex flex-col justify-center">
         <HomeButton/>
         <div className="flex justify-center text-2xl text-playscapes-pink-dark mt-5">
             PlayScapes Presents...
         </div>
-        <div className="flex justify-center mt-10 text-playscapes-purple-light w-full space-x-10">
-            <div className="w-1/2 text-center">
+        <div className="flex flex-col md:flex-row justify-center mt-10 text-playscapes-purple-light w-full md:space-x-10 space-y-5 md:space-y-0">
+            <div className="w-full text-center flex flex-col md:w-1/2">
                 <p>
                     PlayScapes Presents… is PlayScapes’ monthly applied theatre online drop-in event
                     paying attention to topics of diversity, power, position, privilege, prejudice,
@@ -46,7 +46,7 @@ const PlayscapesPresents = () => {
                     expected.
                 </p>
             </div>
-            <div className="w-1/2" id="eventbrite-widget-container-129296171329"></div>
+            <div className="md:w-1/2 w-full" id="eventbrite-widget-container-129296171329"></div>
         </div>
     </div>
 }

@@ -13,17 +13,17 @@ const HeaderItems = {
 const MenuItem = ({title, path, currentPath}) => {
     const highlighted = currentPath === path ? 'text-playscapes-pink-dark' : 'text-playscapes-purple-light';
     return <div className="block mt-4 md:inline-block md:mt-0 mr-4 ml-4">
-        <div className="relative group">
-            <Link to={path} className={`${highlighted} hover:text-playscapes-purple-lighter`}>
+        {path === 'whats-coming-up' ?
+            <div className="relative group">
+                <div className={`${highlighted} hover:text-playscapes-purple md:hover:text-playscapes-purple-lighter hover:bg-playscapes-pink-dark md:hover:bg-transparent md:hover-bg-none rounded-t`}>
+                    {title}
+                </div>
+                <Link className="inline-block md:absolute hidden group-hover:block group-focus:block bg-playscapes-pink-dark md:rounded rounded-t-none rounded-b w-full md:w-48 p-2 text-playscapes-purple" to="/whats-coming-up/playscapes-presents">PlayScapes Presents...</Link>
+            </div>
+            : <Link to={path} className={`${highlighted} hover:text-playscapes-purple-lighter`}>
                 {title}
             </Link>
-            {path === 'whats-coming-up' ?
-                <div className="absolute hidden group-hover:block bg-playscapes-pink-dark rounded w-48 p-2 text-playscapes-purple">
-                    <Link to="/whats-coming-up/playscapes-presents">PlayScapes Presents...</Link>
-                </div>
-                : null
-            }
-        </div>
+        }
     </div>
 };
 

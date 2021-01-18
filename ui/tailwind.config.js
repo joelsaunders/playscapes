@@ -30,7 +30,7 @@ module.exports = {
         }
     },
     variants: {
-        display: ['responsive', 'group-hover']
+        display: ['responsive', 'group-hover', 'group-focus']
     },
     plugins: []
 };

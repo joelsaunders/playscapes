@@ -2,7 +2,7 @@ import React from 'react';
 import HomeButton from "../homeButton";
 
 const Item = (title, text) => {
-    return <div className="w-1/3">
+    return <div className="w-full md:w-1/3 mt-10 md:mt-0">
         <div className="text-playscapes-pink-dark text-center text-lg">
             {title}
         </div>
@@ -25,12 +25,12 @@ const Items = [
 const WhatWeCouldDoTogetherComponent = () => {
     return <div className="flex flex-col">
         <HomeButton />
-        <div className="flex flex-row space-x-5 mt-10">
+        <div className="flex flex-col md:flex-row space-x-0 md:space-x-5 mt-10">
             {Items[0]}
             {Items[1]}
             {Items[2]}
         </div>
-        <div className="flex flex-row space-x-5 mt-5">
+        <div className="flex flex-col md:flex-row space-x-0 md:space-x-5 mt-5">
             {Items[3]}
             {Items[4]}
             {Items[5]}

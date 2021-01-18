@@ -15,10 +15,10 @@ const GetInContact = () => {
             Check out our latest YouTube video
         </div>
         <div className="flex justify-center mt-5">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/r6eC4OvcR4g"
+            <iframe title="youtube video" width="560" height="315" src="https://www.youtube.com/embed/r6eC4OvcR4g"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen></iframe>
+                    allowFullScreen />
         </div>
     </div>
 };

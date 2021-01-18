@@ -8,7 +8,7 @@ const Header = (props) => {
     return <nav className="flex items-center justify-center flex-wrap bg-playscapes-purple px-6 py-3">
         <div className="block md:hidden">
             <button
-                className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+                className="flex items-center px-3 py-2 border rounded text-playscapes-purple-light border-playscapes-purple-light hover:text-white hover:border-white"
                 onClick={onMenuClick}
             >
                 <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
