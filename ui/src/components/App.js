@@ -11,6 +11,7 @@ import WhatWeCouldDoTogetherComponent
     from "./what-we-could-do-together/whatWeCouldDoTogetherComponent";
 import GetInContact from "./get-in-contact/getInContactComponent";
 import PlayscapesPresents from "./whats-coming-up/playscapesPresentsComponent";
+import NVCComponent from "./whats-coming-up/nvcComponent";
 
 function App() {
     return <div className="bg-playscapes-purple min-h-screen">
@@ -27,6 +28,7 @@ function App() {
                     <Route path="/who-we-are" exact component={WhoWeAre}/>
                     <Route path="/who-we-are/:teamMember" exact component={WhoWeAreDetailContainer}/>
                     <Route path="/whats-coming-up/playscapes-presents" exact component={PlayscapesPresents} />
+                    <Route path="/whats-coming-up/nonviolent-communication" exact component={NVCComponent} />
                     <Route path="/what-could-we-do-together" exact component={WhatWeCouldDoTogetherComponent}/>
                     <Route path="/get-in-contact" exact component={GetInContact} />
                 </div>

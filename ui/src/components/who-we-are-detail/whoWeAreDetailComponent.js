@@ -35,16 +35,16 @@ const BioCardCols = (teamMember) => {
 
 const WhoWeAreDetailComponent = ({teamMember}) => {
 
-    return <div className="flex flex-col">
+    return <div className="flex flex-col px-5">
         <HomeButton />
         <div
             className="flex flex-col w-full rounded shadow-lg bg-white-overlay-01dp overflow-hidden mt-5">
             <div className="flex row w-full m-5">
-                <div className="w-1/4 ml-5 mt-5 mr-5 pr-10">
+                <div className="w-1/4 ml-1 md:ml-5 mt-1 md:mt-5 mr-5 md:pr-10">
                     <img alt={`team member - ${teamMember.name}`} className="w-full rounded-full object-cover" src={teamMember.image}/>
                 </div>
                 <div className="flex flex-grow">
-                    <div className="self-end text-playscapes-pink-dark text-5xl">
+                    <div className="self-end text-playscapes-pink-dark text-3xl md:text-5xl">
                         {teamMember.name}
                     </div>
                 </div>
