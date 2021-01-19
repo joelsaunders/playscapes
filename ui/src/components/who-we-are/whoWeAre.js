@@ -51,7 +51,7 @@ const teamMembers = [
 const WhoWeAre = () => {
     return <div className="flex flex-col items-center justify-center mx-5">
         <HomeButton />
-        <div className="flex md:flex-row mt-10 flex-col md:space-x-16 space-y-5  md:space-y-0">
+        <div className="flex md:flex-row mt-5 md:mt-10 flex-col md:space-x-16 space-y-5  md:space-y-0">
             {teamMembers}
         </div>
     </div>
