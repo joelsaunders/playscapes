@@ -1,5 +1,8 @@
 module.exports = {
     theme: {
+        fontFamily: {
+            'sans': ['Josefin Sans', 'Helvetica', 'Arial', 'sans-serif']
+        },
         extend: {
             colors: {
                 'smoke-darkest': 'rgba(0, 0, 0, 0.9)',

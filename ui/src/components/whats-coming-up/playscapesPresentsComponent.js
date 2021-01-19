@@ -20,7 +20,7 @@ const PlayscapesPresents = () => {
         })
     }, [])
 
-    return <div className="flex flex-col justify-center">
+    return <div className="flex flex-col justify-center px-5 md:px-0">
         <HomeButton/>
         <div className="flex justify-center text-2xl text-playscapes-pink-dark mt-5">
             PlayScapes Presents...

@@ -3,9 +3,10 @@ import HeaderMenu from "./HeaderMenu";
 
 
 const Header = (props) => {
-    const {menuOpen, onMenuClick} = props;
+    const {menuOpen, onMenuClick, onCloseMenu} = props;
 
-    return <nav className="flex items-center justify-center flex-wrap bg-playscapes-purple px-6 py-3">
+    return <div className="relative">
+        <nav className="flex items-center justify-center flex-wrap bg-playscapes-purple px-6 py-3">
         <div className="block md:hidden">
             <button
                 className="flex items-center px-3 py-2 border rounded text-playscapes-purple-light border-playscapes-purple-light hover:text-white hover:border-white"
@@ -18,9 +19,15 @@ const Header = (props) => {
             </button>
         </div>
         <div className={`w-full flex justify-center flex-grow md:flex md:items-center md:w-auto md:items-stretch ${menuOpen? null: 'hidden'}`}>
-            <HeaderMenu currentPath={props.currentPath} />
+            <HeaderMenu currentPath={props.currentPath} onCloseMenu={onCloseMenu} />
         </div>
-    </nav>;
+
+    </nav>
+        <div className={`${menuOpen? "absolute": "hidden"} w-full h-screen bg-smoke-light bottom z-50`} onClick={onCloseMenu}>
+
+        </div>
+    </div>
+        ;
 };
 
 export default Header

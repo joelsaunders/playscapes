@@ -23,7 +23,7 @@ const Items = [
 
 
 const WhatWeCouldDoTogetherComponent = () => {
-    return <div className="flex flex-col">
+    return <div className="flex flex-col px-5 md:px-0">
         <HomeButton />
         <div className="flex flex-col md:flex-row space-x-0 md:space-x-5 mt-10">
             {Items[0]}
