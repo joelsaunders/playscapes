@@ -9,6 +9,7 @@ const GetInContact = () => {
         </div>
         <p className="inline-block text-center mt-5 text-playscapes-purple-light text-xl">
             Send us an email! <a className="ml-1 inline"
+                                 target="_blank"
                                  href="mailto:hello@playscapespresents.com">hello@playscapespresents.com</a>
         </p>
         <div className="flex justify-center mt-10 text-lg text-playscapes-pink-dark">

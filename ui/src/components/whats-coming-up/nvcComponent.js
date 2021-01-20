@@ -1,24 +1,9 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import HomeButton from "../homeButton";
-
-const exampleCallback = function () {
-    console.log('Order complete!');
-};
+import EventItem from "./eventItemComponent";
 
 
 const NVCComponent = () => {
-    useEffect(() => {
-        window.EBWidgets.createWidget({
-            // Required
-            widgetType: 'checkout',
-            eventId: '129296171329',
-            iframeContainerId: 'eventbrite-widget-container-129296171329',
-
-            // Optional
-            iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-            onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-        })
-    }, [])
 
     return <div className="flex flex-col justify-center px-5 md:px-0">
         <HomeButton/>
@@ -37,6 +22,8 @@ const NVCComponent = () => {
                     more than four decades travelling the world teaching nonviolence and supporting
                     peaceful conflict resolution. NVC is now taught around the world by more than
                     600 certified trainers and many other enthusiastic and skilful practitioners.
+                </p>
+                <p className="mt-5">
                     Matthew trained with Marshall in 2007 as well as with a wide number of other
                     trainers. He has been a certified trainer since 2012, and has taught NVC in a
                     wide range of contexts in Africa, Asia, Europe, and North America, including
@@ -48,7 +35,19 @@ const NVCComponent = () => {
                     training and coaching for organisations.
                 </p>
             </div>
-            <div className="md:w-1/2 w-full" id="eventbrite-widget-container-129296171329"/>
+            <div className="flex flex-col space-y-5 w-full md:w-1/2">
+                <div className="text-playscapes-pink-dark text-2xl text-center mt-10 md:mt-0">Events</div>
+                <EventItem
+                    link="https://www.eventbrite.co.uk/e/connecting-across-difference-an-introduction-to-nonviolent-communication-tickets-137657596577"
+                    image="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F123717905%2F119339897275%2F1%2Foriginal.20210120-194509?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C87%2C1050%2C525&s=7d06c52ee8d04cf3c524a512c140e6c6"
+                    name="Connecting Across Difference: An Introduction to Nonviolent Communication"
+                />
+                <EventItem
+                    link="https://www.eventbrite.com/e/challenging-conversations-a-next-step-in-living-nonviolent-communication-tickets-137667710829"
+                    image="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F123720293%2F119339897275%2F1%2Foriginal.20210120-200423?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C449%2C5184%2C2592&s=017d76a767ac1ef4eb86a99fb7b39371"
+                    name="Challenging Conversations: A Next Step in Living Nonviolent Communication"
+                />
+            </div>
         </div>
     </div>
 }

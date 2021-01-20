@@ -1,5 +1,6 @@
 const teamMembers = {
     "Jo Wood": {
+        "linkedin": "https://www.linkedin.com/in/joanne-wood-9a4880104/",
         "image": "https://res.cloudinary.com/dceeo2a79/image/upload/f_auto,q_auto/v1609327071/playscapes/jo-profile_dpgvad.jpg",
         "short-bio": "Jo is a keen critical thinker who enjoys the messy process of uncovering assumptions and possibilities. Even though it is often uncomfortable, she likes to challenge the way she has been taught things ‘should’ be. Over the past four years she has worked at RISE Beyond, a leadership consultancy. An experience that was new and uncomfortable for her, but which she has learnt a lot from, the skill of drawing people’s attention to what is going on in the room (and sometimes even how it relates to what is not in the room!) She lives in London.",
         "long-bio-cards": [
@@ -28,6 +29,7 @@ const teamMembers = {
         ]
     },
     "Matthew Rich-Tolsma": {
+        "linkedin": "https://www.linkedin.com/in/matthewrichtolsma/",
         "image": "https://res.cloudinary.com/dceeo2a79/image/upload/f_auto,q_auto/v1609327072/playscapes/Matthew-profile_izq0ug.jpg",
         "short-bio": "After more than a decade of trying to find himself and transform the world, Matthew slowly began to recognise that it might be more helpful to focus on learning to understand and creatively bear with who he was and the world he was living in now. He draws on a rich background in critical education, Nonviolent Communication, organisational consulting, developmental psychology, complexity thinking, and improvisational theatre to participate in conversations with people in organisation and communities about taking their experience of working and living together more seriously. He is South African and Dutch and lives (primarily) in The Netherlands.",
         "long-bio-cards": [

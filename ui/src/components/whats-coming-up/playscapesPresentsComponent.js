@@ -1,31 +1,17 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import HomeButton from "../homeButton";
-
-const exampleCallback = function() {
-            console.log('Order complete!');
-        };
+import EventItem from "./eventItemComponent";
 
 
 const PlayscapesPresents = () => {
-    useEffect(() => {
-        window.EBWidgets.createWidget({
-            // Required
-            widgetType: 'checkout',
-            eventId: '129296171329',
-            iframeContainerId: 'eventbrite-widget-container-129296171329',
-
-            // Optional
-            iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-            onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-        })
-    }, [])
 
     return <div className="flex flex-col justify-center px-5 md:px-0">
         <HomeButton/>
         <div className="flex justify-center text-2xl text-playscapes-pink-dark mt-5">
             PlayScapes Presents...
         </div>
-        <div className="flex flex-col md:flex-row justify-center mt-10 text-playscapes-purple-light w-full md:space-x-10 space-y-5 md:space-y-0">
+        <div
+            className="flex flex-col md:flex-row justify-center mt-10 text-playscapes-purple-light w-full md:space-x-10 space-y-5 md:space-y-0">
             <div className="w-full text-center flex flex-col md:w-1/2">
                 <p>
                     PlayScapes Presents… is PlayScapes’ monthly applied theatre online drop-in event
@@ -33,7 +19,7 @@ const PlayscapesPresents = () => {
                     oppression, collaboration/conflict, and inclusion/exclusion in participants
                     experience of organisational and community life.
                 </p>
-                <p className="mt-2">
+                <p className="mt-5">
                     Typically we are joined by people working in a range of different
                     organisational
                     contexts who are interested in these topics, as well as by actors /
@@ -46,7 +32,16 @@ const PlayscapesPresents = () => {
                     expected.
                 </p>
             </div>
-            <div className="md:w-1/2 w-full" id="eventbrite-widget-container-129296171329"></div>
+            <div className="flex flex-col space-y-5 w-full md:w-1/2">
+                <div
+                    className="text-playscapes-pink-dark text-2xl text-center mt-10 md:mt-0">Events
+                </div>
+                <EventItem
+                    link="https://www.eventbrite.com/e/playscapes-presents-an-improvisational-look-at-conflict-tickets-129296171329"
+                    image="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F117811699%2F156222267191%2F1%2Foriginal.20201116-122221?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=2ee7852ddcea354fff4e97b93c71eaf7"
+                    name="PlayScapes Presents... An Improvisational Look at Conflict"
+                />
+            </div>
         </div>
     </div>
 }
