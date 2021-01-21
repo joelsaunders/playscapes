@@ -40,6 +40,7 @@ const PlayscapesPresents = () => {
                     link="https://www.eventbrite.com/e/playscapes-presents-an-improvisational-look-at-conflict-tickets-129296171329"
                     image="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F117811699%2F156222267191%2F1%2Foriginal.20201116-122221?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=2ee7852ddcea354fff4e97b93c71eaf7"
                     name="PlayScapes Presents... An Improvisational Look at Conflict"
+                    date="26/01/2021 17:00 GMT"
                 />
             </div>
         </div>
