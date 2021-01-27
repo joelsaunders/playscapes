@@ -41,13 +41,13 @@ const NVCComponent = () => {
                     link="https://www.eventbrite.co.uk/e/connecting-across-difference-an-introduction-to-nonviolent-communication-tickets-137657596577"
                     image="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F123717905%2F119339897275%2F1%2Foriginal.20210120-194509?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C87%2C1050%2C525&s=7d06c52ee8d04cf3c524a512c140e6c6"
                     name="Connecting Across Difference: An Introduction to Nonviolent Communication"
-                    date="15/02/2021 17:00 GMT"
+                    date="6 week course, starting on Monday 15th February 2021"
                 />
                 <EventItem
                     link="https://www.eventbrite.com/e/challenging-conversations-a-next-step-in-living-nonviolent-communication-tickets-137667710829"
                     image="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F123720293%2F119339897275%2F1%2Foriginal.20210120-200423?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C449%2C5184%2C2592&s=017d76a767ac1ef4eb86a99fb7b39371"
                     name="Challenging Conversations: A Next Step in Living Nonviolent Communication"
-                    date="29/03/2021 17:00 BST"
+                    date="8 week course, starting on Monday 29th March 2021"
                 />
             </div>
         </div>
