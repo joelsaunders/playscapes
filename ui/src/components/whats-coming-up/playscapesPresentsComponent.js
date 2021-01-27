@@ -38,7 +38,7 @@ const PlayscapesPresents = () => {
                 </div>
                 <EventItem
                     link="https://www.eventbrite.com/e/playscapes-presents-an-improvisational-look-at-encounters-with-privilege-tickets-138169152655"
-                    image="https://res.cloudinary.com/dceeo2a79/image/upload/f_auto,q_auto/v1611768805/playscapes/eventbrite_banner__2_.png"
+                    image="https://res.cloudinary.com/dceeo2a79/image/upload/f_auto,q_auto/v1611769546/playscapes/eventbrite_banner__1_.png"
                     name="PlayScapes Presents... An Improvisational Look at Encounters with Privilege"
                     date="23/02/2021 18:00 GMT"
                 />

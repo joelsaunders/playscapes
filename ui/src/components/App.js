@@ -20,6 +20,14 @@ function App() {
             <title>PlayScapes</title>
             <meta name="description" content="PlayScapes"/>
             <meta name="robots" content="index,follow"/>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCMK7YGEHW"/>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-HCMK7YGEHW');
+            </script>
         </Helmet>
         <div className="container mx-auto max-w-10xl pb-20">
             <Router history={customHistory}>
@@ -27,12 +35,16 @@ function App() {
                     <Route path="/" component={HeaderContainer}/>
                     <Route path="/" exact component={HompageContainer}/>
                     <Route path="/who-we-are" exact component={WhoWeAre}/>
-                    <Route path="/who-we-are/:teamMember" exact component={WhoWeAreDetailContainer}/>
-                    <Route path="/whats-coming-up/playscapes-presents" exact component={PlayscapesPresents} />
-                    <Route path="/whats-coming-up/nonviolent-communication" exact component={NVCComponent} />
-                    <Route path="/what-could-we-do-together" exact component={WhatWeCouldDoTogetherComponent}/>
-                    <Route path="/get-in-contact" exact component={GetInContact} />
-                    <Route path="/" component={Footer} />
+                    <Route path="/who-we-are/:teamMember" exact
+                           component={WhoWeAreDetailContainer}/>
+                    <Route path="/whats-coming-up/playscapes-presents" exact
+                           component={PlayscapesPresents}/>
+                    <Route path="/whats-coming-up/nonviolent-communication" exact
+                           component={NVCComponent}/>
+                    <Route path="/what-could-we-do-together" exact
+                           component={WhatWeCouldDoTogetherComponent}/>
+                    <Route path="/get-in-contact" exact component={GetInContact}/>
+                    <Route path="/" component={Footer}/>
                 </div>
             </Router>
         </div>
