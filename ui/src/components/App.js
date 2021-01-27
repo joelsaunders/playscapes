@@ -20,14 +20,6 @@ function App() {
             <title>PlayScapes</title>
             <meta name="description" content="PlayScapes"/>
             <meta name="robots" content="index,follow"/>
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCMK7YGEHW"/>
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'G-HCMK7YGEHW');
-            </script>
         </Helmet>
         <div className="container mx-auto max-w-10xl pb-20">
             <Router history={customHistory}>
