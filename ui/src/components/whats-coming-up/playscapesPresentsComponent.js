@@ -37,32 +37,26 @@ const PlayscapesPresents = () => {
                     className="text-playscapes-pink-dark text-2xl text-center mt-10 md:mt-0">Events
                 </div>
                 <EventItem
-                    link="https://www.eventbrite.com/e/playscapes-presents-an-improvisational-look-at-encounters-with-privilege-tickets-138169152655"
-                    image="https://res.cloudinary.com/dceeo2a79/image/upload/f_auto,q_auto/v1611769546/playscapes/eventbrite_banner__1_.png"
-                    name="PlayScapes Presents... An Improvisational Look at Encounters with Privilege"
-                    date="23/02/2021 18:00 GMT"
-                />
-                <EventItem
                     link="https://www.eventbrite.co.uk/e/playscapes-presentsan-improvisational-look-at-struggling-to-find-my-voice-tickets-139724001249"
-                    image="https://res.cloudinary.com/dceeo2a79/image/upload/f_auto,q_auto/v1613927519/playscapes/sushil-nash-cv2mfx1ylmq-unsplash.jpg"
+                    image="https://res.cloudinary.com/dceeo2a79/image/upload/f_auto,q_10/v1613927519/playscapes/sushil-nash-cv2mfx1ylmq-unsplash.jpg"
                     name="PlayScapes Presents... An Improvisational Look at Struggling to Find My Voice"
                     date="23/03/2021 18:00 GMT"
                 />
                 <EventItem
                     link="https://www.eventbrite.co.uk/e/playscapes-presentsan-improvisational-look-at-terrible-meetings-tickets-142387704457"
-                    image="https://res.cloudinary.com/dceeo2a79/image/upload/f_auto,q_auto/v1613927523/playscapes/daniel-mingook-kim-pd-boa-mzqs-unsplash.jpg"
+                    image="https://res.cloudinary.com/dceeo2a79/image/upload/f_auto,q_10/v1613927523/playscapes/daniel-mingook-kim-pd-boa-mzqs-unsplash.jpg"
                     name="PlayScapes Presents... An Improvisational Look at Terrible Meetings"
                     date="20/04/2021 18:00 GMT"
                 />
                 <EventItem
                     link="https://www.eventbrite.co.uk/e/playscapes-presentsan-improvisational-look-at-losing-my-temper-tickets-142387943171"
-                    image="https://res.cloudinary.com/dceeo2a79/image/upload/f_auto,q_auto/v1613927523/playscapes/aaron-blanco-tejedor-vbe9zj-jhbs-unsplash.jpg"
+                    image="https://res.cloudinary.com/dceeo2a79/image/upload/f_auto,q_10/v1613927523/playscapes/aaron-blanco-tejedor-vbe9zj-jhbs-unsplash.jpg"
                     name="PlayScapes Presents... An Improvisational Look at Losing My Temper"
                     date="25/05/2021 18:00 GMT"
                 />
                 <EventItem
                     link="https://www.eventbrite.co.uk/e/playscapes-presentsan-improvisational-look-at-racism-tickets-142388177873"
-                    image="https://res.cloudinary.com/dceeo2a79/image/upload/f_auto,q_auto/v1613927519/playscapes/clay-banks-gip2lcwslv4-unsplash.jpg"
+                    image="https://res.cloudinary.com/dceeo2a79/image/upload/f_auto,q_10/v1613927519/playscapes/clay-banks-gip2lcwslv4-unsplash.jpg"
                     name="PlayScapes Presents... An Improvisational Look at Racism"
                     date="29/06/2021 18:00 GMT"
                 />
