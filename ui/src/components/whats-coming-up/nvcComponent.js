@@ -1,9 +1,24 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import HomeButton from "../homeButton";
 import EventItem from "./eventItemComponent";
+import {getList} from "../../apis/events";
 
 
 const NVCComponent = () => {
+
+    const [events, setEvents] = useState([])
+
+    useEffect(() => {
+        let mounted = true;
+        getList('NVC').then(
+            items => {
+                if (mounted) {
+                    setEvents(items)
+                }
+            }
+        )
+        return () => mounted = false;
+    }, [])
 
     return <div className="flex flex-col justify-center px-5 md:px-0">
         <HomeButton/>
@@ -37,12 +52,17 @@ const NVCComponent = () => {
             </div>
             <div className="flex flex-col space-y-5 w-full md:w-1/2">
                 <div className="text-playscapes-pink-dark text-2xl text-center mt-10 md:mt-0">Events</div>
-                <EventItem
-                    link="https://www.eventbrite.com/e/challenging-conversations-a-next-step-in-living-nonviolent-communication-tickets-137667710829"
-                    image="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F123720293%2F119339897275%2F1%2Foriginal.20210120-200423?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C449%2C5184%2C2592&s=017d76a767ac1ef4eb86a99fb7b39371"
-                    name="Challenging Conversations: A Next Step in Living Nonviolent Communication"
-                    date="8 week course, starting on Monday 29th March 2021"
-                />
+                {
+                    events.map((event) => {
+                        return <EventItem
+                            link={event.link_url}
+                            image={event.image_url}
+                            name={event.name}
+                            start_date={event.start_date}
+                            schedule_text={event.schedule_text}
+                        />
+                    })
+                }
             </div>
         </div>
     </div>

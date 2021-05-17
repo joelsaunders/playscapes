@@ -12,12 +12,15 @@ class Event(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     start_date = models.DateTimeField()
     schedule_text = models.CharField(max_length=200, null=True, blank=True)
-    end_date = models.DateTimeField()
     image_url = models.TextField()
     event_type = models.CharField(choices=EVENT_TYPE_CHOICES, max_length=3)
+    link_url = models.TextField()
 
     class Meta:
         indexes = [
             Index(fields=['event_type']),
             Index(fields=['start_date'])
         ]
+
+    def __str__(self):
+        return f'{self.id} - {self.name}'
