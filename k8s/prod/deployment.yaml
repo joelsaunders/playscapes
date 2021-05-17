@@ -18,3 +18,44 @@ spec:
           image: nginx
           ports:
             - containerPort: 80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: playscapes-api
+  namespace: playscapes
+spec:
+  selector:
+    matchLabels:
+      name: playscapes-api
+  revisionHistoryLimit: 1
+  template:
+    metadata:
+      labels:
+        name: playscapes-api
+    spec:
+      containers:
+        - name: playscapes-api
+          image: backend
+          ports:
+            - containerPort: 80
+          env:
+            - name: DB_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: db-host
+                  key: db-host
+            - name: DB_PORT
+              valueFrom:
+                secretKeyRef:
+                  name: db-port
+                  key: db-port
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: db-password
+                  key: db-password
+            - name: DB_USER
+              value: playscapes
+            - name: DB_NAME
+              value: playscapes

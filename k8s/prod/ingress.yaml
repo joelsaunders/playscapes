@@ -16,6 +16,14 @@ spec:
     - host: playscapespresents.com
       http:
         paths:
+          - path: /admin
+            backend:
+              serviceName: playscapes-api
+              servicePort: 80
+          - path: /api
+            backend:
+              serviceName: playscapes-api
+              servicePort: 80
           - path: /
             backend:
               serviceName: playscapes-nginx

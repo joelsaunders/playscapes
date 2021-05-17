@@ -11,3 +11,17 @@ spec:
       targetPort: 80
   selector:
     name: playscapes-main
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: playscapes-api
+  namespace: playscapes
+spec:
+  ports:
+    - name: http
+      port: 80
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    name: playscapes-api
